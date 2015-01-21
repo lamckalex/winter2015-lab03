@@ -38,13 +38,23 @@
 |
 */
 
+//My entries
+// last	Navbar	A suitable new controller in controllers/last/
 $route['last'] = "last/";
+// sleep	Homepage	Remapped to first::zzz
 $route['sleep'] = "first/zzz";
+// lock/em/up	Homepage	Remapped to welcome::shucks, using wildcard (lock / *)
 $route['lock/:any/:any'] = "welcome/shucks";
+// show/3	Homepage	Remapped to first::gimme/3, using wildcard (show / digit)
 $route['show/:num'] = "first/gimme/3";
+// dunno	Homepage	Remapped to guess (new controller)
 $route['dunno'] = "guess";
+// wise/bingo	Homepage	Remapped to bingo, using regular expression (4 letters / bingo) (new controller)
 $route['([a-z]{4})/bingo'] = "bingo";
+// comp4711/wisdom	Homepage	Remapped to bingo::wisdom, using regular expression (comp + digits / *)
 $route['comp\d{4}/:any'] = "bingo/wisdom";
+
+//Default
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
