@@ -30,6 +30,18 @@ class Welcome extends Application {
 
         $this->render();
     }
+    
+    function shucks()
+    {
+        $this->data['pagebody'] = 'justone';
+        $record = $this->quotes->get(2);
+        
+        $this->data['what'] = $record['what'];
+        $this->data['mug'] = $record['mug'];
+        $this->data['who'] = $record['who'];
+        
+        $this->render();        
+    }
 
 }
 

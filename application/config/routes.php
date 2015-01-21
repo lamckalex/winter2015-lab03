@@ -38,6 +38,13 @@
 |
 */
 
+$route['last'] = "last/";
+$route['sleep'] = "first/zzz";
+$route['lock/:any/:any'] = "welcome/shucks";
+$route['show/:num'] = "first/gimme/3";
+$route['dunno'] = "guess";
+$route['([a-z]{4})/bingo'] = "bingo";
+$route['comp\d{4}/:any'] = "bingo/wisdom";
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
